@@ -44,15 +44,33 @@ export default function Home() {
               Simplify the Web Artisan's workflow.
             </Paragraph>
 
-            <Button
+            <Pane
               is='a'
               marginTop={majorScale(2)}
-              appearance='primary'
-              height={majorScale(5)}
+              color='white'
+              paddingY={majorScale(1)}
+              paddingX={majorScale(2)}
               href='//github.com/tinkerun/tinkerun/releases/latest'
+              display='inline-block'
+              lineHeight={1.6}
+              borderRadius={4}
+              backgroundImage='linear-gradient(to left, #F08346, #E96969)'
+              hoverElevation={3}
+              elevation={2}
             >
               Download for macOS
-            </Button>
+            </Pane>
+
+            <Pane
+              marginTop={majorScale(1)}
+              is='iframe'
+              src="https://ghbtns.com/github-btn.html?user=tinkerun&repo=tinkerun&type=star&count=true"
+              frameBorder="0"
+              scrolling="0"
+              width="150"
+              height="20"
+              title="GitHub"
+            />
           </Pane>
 
           <Pane
