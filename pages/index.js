@@ -1,65 +1,71 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import {Button, Heading, majorScale, Pane, Paragraph, Link} from 'evergreen-ui'
+
+import Layout from '../components/layout'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Layout>
+      <Pane
+        width={1000}
+        marginX='auto'
+      >
+        <Pane
+          is='section'
+          marginTop={100}
+          display='flex'
+          justifyContent='space-between'
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+          <Pane
+            textAlign='left'
+            width={300}
+          >
+            <Pane
+              is='img'
+              src='/tinkerun.svg'
+              width={60}
+              height={60}
+              marginTop={50}
+            />
+
+            <Heading
+              marginTop={majorScale(3)}
+              size={900}
+              fontWeight='lighter'
+            >
+              Tinkerun
+            </Heading>
+
+            <Paragraph
+              size={500}
+              marginTop={majorScale(1)}
+              fontWeight='lighter'
+            >
+              A new way of running <Link href='//github.com/laravel/tinker'>Tinker</Link>. <br/>
+              Simplify the Web Artisan's workflow.
+            </Paragraph>
+
+            <Button
+              is='a'
+              marginTop={majorScale(2)}
+              appearance='primary'
+              height={majorScale(5)}
+              href='//github.com/tinkerun/tinkerun/releases/latest'
+            >
+              Download for macOS
+            </Button>
+          </Pane>
+
+          <Pane
+            flex={1}
+          >
+            <Pane
+              is='img'
+              src='/screenshot.png'
+              width='100%'
+            />
+          </Pane>
+        </Pane>
+      </Pane>
+    </Layout>
   )
 }
