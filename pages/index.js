@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import Layout from '../components/layout'
 import DownloadButton from '../components/DownloadButton'
 import GithubButton from '../components/GithubButton'
@@ -11,10 +9,9 @@ export default function IndexPage() {
         <section className='lg:mt-32 mt-0 flex justify-between lg:flex-row flex-col'>
           <div className='lg:w-1/4 w-auto flex flex-col lg:items-start items-center mt-12 text-white'>
             <div className='w-16 h-16'>
-              <Image
-                src='/logo.png'
-                width={180}
-                height={180}
+              <img
+                alt='logo'
+                src='/logo.png?nf_resize=fit&w=180'
               />
             </div>
 
@@ -35,10 +32,9 @@ export default function IndexPage() {
           </div>
 
           <div className='lg:flex-1 lg:mt-0 mt-16 mx-auto'>
-            <Image
-              src='/screenshot.png'
-              width={800}
-              height={1575/1920*800}
+            <img
+              alt='screenshot'
+              src='/screenshot.png?nf_resize=fit&w=800'
             />
           </div>
         </section>
