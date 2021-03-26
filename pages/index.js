@@ -34,7 +34,7 @@ export default function IndexPage() {
           <div className='lg:flex-1 lg:mt-0 mt-16 mx-auto'>
             <img
               alt='screenshot'
-              src='/screenshot.png?nf_resize=fit&w=800'
+              src='/screenshot.png?nf_resize=fit&w=1600'
             />
           </div>
         </section>
