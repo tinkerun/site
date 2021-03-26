@@ -1,89 +1,48 @@
-import {Button, Heading, majorScale, Pane, Paragraph, Link} from 'evergreen-ui'
+import Image from 'next/image'
 
 import Layout from '../components/layout'
+import DownloadButton from '../components/DownloadButton'
+import GithubButton from '../components/GithubButton'
 
-export default function Home() {
+export default function IndexPage() {
   return (
     <Layout>
-      <Pane
-        width={1000}
-        marginX='auto'
-      >
-        <Pane
-          is='section'
-          marginTop={100}
-          display='flex'
-          justifyContent='space-between'
-        >
-          <Pane
-            textAlign='left'
-            width={300}
-          >
-            <Pane
-              is='img'
-              src='/tinkerun.svg'
-              width={60}
-              height={60}
-              marginTop={50}
-            />
+      <div className='w-full max-w-screen-lg mx-auto p-4'>
+        <section className='lg:mt-32 mt-0 flex justify-between lg:flex-row flex-col'>
+          <div className='lg:w-1/4 w-auto flex flex-col lg:items-start items-center mt-12 text-white'>
+            <div className='w-16 h-16'>
+              <Image
+                src='/logo.png'
+                width={180}
+                height={180}
+              />
+            </div>
 
-            <Heading
-              marginTop={majorScale(3)}
-              size={900}
-              fontWeight='lighter'
-            >
-              Tinkerun
-            </Heading>
+            <div className='my-8 text-center lg:text-left'>
+              <h1 className='text-4xl italic font-bold'>
+                Tinkerun
+              </h1>
 
-            <Paragraph
-              size={500}
-              marginTop={majorScale(1)}
-              fontWeight='lighter'
-            >
-              A new way of running <Link href='//github.com/laravel/tinker'>Tinker</Link>. <br/>
-              Simplify the Web Artisan's workflow.
-            </Paragraph>
+              <p className='text-sm font-light mt-2'>
+                A new way of running <a className='underline' href='//github.com/laravel/tinker'>Tinker</a>.
+                <br/>
+                Simplify the Web Artisan's workflow.
+              </p>
+            </div>
 
-            <Pane
-              is='a'
-              marginTop={majorScale(2)}
-              color='white'
-              paddingY={majorScale(1)}
-              paddingX={majorScale(2)}
-              href='//github.com/tinkerun/tinkerun/releases/latest'
-              display='inline-block'
-              lineHeight={1.6}
-              borderRadius={4}
-              backgroundImage='linear-gradient(to left, #F08346, #E96969)'
-              hoverElevation={3}
-              elevation={2}
-            >
-              Download for macOS
-            </Pane>
+            <DownloadButton/>
+            <GithubButton/>
+          </div>
 
-            <Pane
-              marginTop={majorScale(1)}
-              is='iframe'
-              src="https://ghbtns.com/github-btn.html?user=tinkerun&repo=tinkerun&type=star&count=true"
-              frameBorder="0"
-              scrolling="0"
-              width="150"
-              height="20"
-              title="GitHub"
-            />
-          </Pane>
-
-          <Pane
-            flex={1}
-          >
-            <Pane
-              is='img'
+          <div className='lg:flex-1 lg:mt-0 mt-16 mx-auto'>
+            <Image
               src='/screenshot.png'
-              width='100%'
+              width={800}
+              height={1575/1920*800}
             />
-          </Pane>
-        </Pane>
-      </Pane>
+          </div>
+        </section>
+      </div>
     </Layout>
   )
 }

@@ -1,9 +1,13 @@
 import Head from 'next/head'
 
+import Footer from './Footer'
+
 const Layout = ({children, title = 'Tinkerun'}) => {
   return (
     <main>
       <Head>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>{title}</title>
         <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png"/>
         <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png"/>
@@ -21,11 +25,12 @@ const Layout = ({children, title = 'Tinkerun'}) => {
         <link rel="manifest" href="/favicon/manifest.json"/>
         <meta name="msapplication-TileColor" content="#ffffff"/>
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
-        <meta name="theme-color" content="#ffffff"/>
+        <meta name="theme-color" content="#c95e84"/>
       </Head>
 
       {children}
 
+      <Footer/>
     </main>
   )
 }
