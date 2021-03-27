@@ -30,7 +30,7 @@ const Layout = ({children, title = 'Tinkerun'}) => {
       </Head>
 
       <div className='w-full max-w-screen-lg mx-auto p-4'>
-        <section className='lg:mt-32 mt-0 flex justify-between lg:flex-row flex-col'>
+        <section className='lg:mt-10 mt-0 flex justify-between lg:flex-row flex-col'>
           <LeftSide/>
           <div className='lg:flex-1 lg:mt-0 mt-16 mx-auto'>
             {children}

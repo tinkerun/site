@@ -7,9 +7,9 @@ export default function ChangelogPage() {
   return (
     <Layout>
       <div
-        className='bg-white text-gray-800 p-8 opacity-80 rounded'
+        className='bg-white text-gray-800 p-8 opacity-80 rounded lg:m-10'
         style={{
-          minHeight: 450,
+          minHeight: 530,
         }}
       >
         <h2 className='text-5xl font-bold'>Changelog</h2>
