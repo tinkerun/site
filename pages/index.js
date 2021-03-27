@@ -28,6 +28,10 @@ export default function IndexPage() {
             </div>
 
             <DownloadButton/>
+            <p className='py-4 text-xs italic'>
+              Support macOS, Windows and Linux
+            </p>
+
             <GithubButton/>
           </div>
 

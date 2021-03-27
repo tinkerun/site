@@ -7,7 +7,7 @@ const DownloadButton = (props) => (
     href='//github.com/tinkerun/tinkerun/releases/latest'
     {...props}
   >
-    Download for macOS
+    Download the latest
   </a>
 )
 
