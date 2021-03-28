@@ -3,6 +3,7 @@ import Link from 'next/link'
 import DownloadButton from './DownloadButton'
 import GithubButton from './GithubButton'
 import ChangelogLink from './ChangelogLink'
+import ProductHuntButton from './ProductHuntButton'
 
 const LeftSide = () => (
   <div className='lg:w-1/4 w-auto flex flex-col lg:items-start items-center mt-12 text-white'>
@@ -37,6 +38,10 @@ const LeftSide = () => (
     <div className='flex items-end'>
       <GithubButton/>
       <ChangelogLink/>
+    </div>
+
+    <div className='mt-8'>
+      <ProductHuntButton/>
     </div>
   </div>
 )
