@@ -10,6 +10,9 @@ const Layout = ({children, title = 'Tinkerun'}) => {
         <meta charSet="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>{title}</title>
+        <meta name="description" content="A new way of running Tinker. Simplify the Web Artisan's workflow. Inspired by Tinkerwell"/>
+        <meta name="keywords" content="Laravel, Tinker, Tinkerwell, Workflow, Artisan, Tinkerun"/>
+        <meta name="author" content="billyct"/>
         <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png"/>
         <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png"/>
         <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png"/>
