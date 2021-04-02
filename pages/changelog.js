@@ -18,6 +18,20 @@ export default function ChangelogPage() {
         <div className='mt-12 border-t py-12'>
 
           <ChangelogItem
+            date={format(new Date(2021, 4, 2), 'LLL, dd yyyy')}
+            version='v0.1.2'
+          >
+            <ul className='list-disc text-sm pl-4'>
+              <li>
+                Fixes <a className='text-blue-500 hover:underline' href='//github.com/tinkerun/tinkerun/issues/3'>#3</a>
+              </li>
+              <li>
+                Fixes <a className='text-blue-500 hover:underline' href='//github.com/tinkerun/tinkerun/issues/2'>#2</a>
+              </li>
+            </ul>
+          </ChangelogItem>
+
+          <ChangelogItem
             date={format(new Date(2021, 3, 28), 'LLL, dd yyyy')}
             version='v0.1.1'
           >
