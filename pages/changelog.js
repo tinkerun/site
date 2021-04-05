@@ -18,7 +18,18 @@ export default function ChangelogPage() {
         <div className='mt-12 border-t py-12'>
 
           <ChangelogItem
-            date={format(new Date(2021, 4, 2), 'LLL, dd yyyy')}
+            date={format(new Date(2021, 3, 5), 'LLL, dd yyyy')}
+            version='v0.1.3'
+          >
+            <p className='text-sm leading-loose'>
+              Support long query split into multiple lines
+              <br/>
+              See issue <a className='text-blue-500 hover:underline' href='//github.com/tinkerun/tinkerun/issues/5'>#5</a>
+            </p>
+          </ChangelogItem>
+
+          <ChangelogItem
+            date={format(new Date(2021, 3, 2), 'LLL, dd yyyy')}
             version='v0.1.2'
           >
             <ul className='list-disc text-sm pl-4'>
@@ -32,7 +43,7 @@ export default function ChangelogPage() {
           </ChangelogItem>
 
           <ChangelogItem
-            date={format(new Date(2021, 3, 28), 'LLL, dd yyyy')}
+            date={format(new Date(2021, 2, 28), 'LLL, dd yyyy')}
             version='v0.1.1'
           >
             <ul className='list-disc text-sm pl-4'>
@@ -42,7 +53,7 @@ export default function ChangelogPage() {
           </ChangelogItem>
 
           <ChangelogItem
-            date={format(new Date(2021, 3, 26), 'LLL, dd yyyy')}
+            date={format(new Date(2021, 2, 26), 'LLL, dd yyyy')}
             version='v0.1.0'
           >
             <p className='text-lg'>
