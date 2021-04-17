@@ -1,9 +1,8 @@
 import Head from 'next/head'
 
 import Footer from './Footer'
-import LeftSide from './LeftSide'
 
-const Layout = ({children, title = 'Tinkerun'}) => {
+const BaseLayout = ({children, title = 'Tinkerun'}) => {
   return (
     <main>
       <Head>
@@ -32,18 +31,11 @@ const Layout = ({children, title = 'Tinkerun'}) => {
         <meta name="theme-color" content="#c95e84"/>
       </Head>
 
-      <div className='w-full max-w-screen-lg mx-auto p-4'>
-        <section className='lg:mt-10 mt-0 flex justify-between lg:flex-row flex-col'>
-          <LeftSide/>
-          <div className='lg:flex-1 lg:mt-0 mt-16 mx-auto'>
-            {children}
-          </div>
-        </section>
-      </div>
+      {children}
 
       <Footer/>
     </main>
   )
 }
 
-export default Layout
+export default BaseLayout

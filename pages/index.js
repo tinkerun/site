@@ -1,14 +1,12 @@
-import Layout from '../components/layout'
-import DownloadButton from '../components/DownloadButton'
-import GithubButton from '../components/GithubButton'
+import AppLayout from '../components/AppLayout'
 
 export default function IndexPage() {
   return (
-    <Layout>
+    <AppLayout>
       <img
         alt='screenshot'
         src='/screenshot.png?nf_resize=fit&w=1600'
       />
-    </Layout>
+    </AppLayout>
   )
 }

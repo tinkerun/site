@@ -1,13 +1,24 @@
-const GithubButton = ({props}) => (
+import PropTypes from 'prop-types'
+
+const GithubButton = ({user, repo, ...rest}) => (
   <iframe
-    className='mt-4'
-    src="https://ghbtns.com/github-btn.html?user=tinkerun&repo=tinkerun&type=star&count=true"
+    src={`https://ghbtns.com/github-btn.html?user=${user}&repo=${repo}&type=star&count=true`}
     frameBorder="0"
     scrolling="0"
     width="120"
     height="20"
-    {...props}
+    {...rest}
   />
 )
+
+GithubButton.propTypes = {
+  user: PropTypes.string,
+  repo: PropTypes.string,
+}
+
+GithubButton.defaultProps = {
+  user: 'tinkerun',
+  repo: 'tinkerun',
+}
 
 export default GithubButton

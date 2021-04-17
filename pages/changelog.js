@@ -1,11 +1,11 @@
 import {format} from 'date-fns'
 
-import Layout from '../components/layout'
+import AppLayout from '../components/AppLayout'
 import ChangelogItem from '../components/ChangelogItem'
 
 export default function ChangelogPage() {
   return (
-    <Layout>
+    <AppLayout>
       <div
         className='bg-white text-gray-800 p-8 opacity-80 rounded lg:m-10'
         style={{
@@ -63,6 +63,6 @@ export default function ChangelogPage() {
 
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   )
 }

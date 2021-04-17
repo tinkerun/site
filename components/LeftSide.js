@@ -35,7 +35,7 @@ const LeftSide = () => (
       Support macOS, Windows and Linux
     </p>
 
-    <div className='flex items-end'>
+    <div className='flex items-end mt-4'>
       <GithubButton/>
       <ChangelogLink/>
     </div>
