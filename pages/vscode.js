@@ -10,7 +10,7 @@ export default function VSCodePage() {
     >
       <section className='pt-20 text-center'>
 
-        <div className='flex justify-center items-center mb-4'>
+        <div className='flex justify-center items-center mb-8'>
           <div className='w-16 h-16'>
             <img
               alt='logo'
@@ -25,7 +25,7 @@ export default function VSCodePage() {
         <h1 className='text-5xl font-black'>
           for Visual Studio Code
         </h1>
-        <p className='font-light text-lg my-6'>
+        <p className='font-light text-sm mt-4'>
           The missing way of running tinker in VSCode,
           <strong className='font-bold ml-1'>😉 allows you to stay with the VSCode's workflow.</strong>
           <br/>
@@ -35,12 +35,12 @@ export default function VSCodePage() {
 
         <a
           href='//marketplace.visualstudio.com/items?itemName=tinkerun.tinkerun-vscode'
-          className='px-4 py-2 font-bold bg-gradient-to-r from-pink-600 to-gray-600 shadow rounded leading-loose inline-block hover:shadow-lg'
+          className='mt-8 px-4 py-2 font-bold bg-gradient-to-r from-pink-600 to-gray-600 shadow rounded leading-loose inline-block hover:shadow-lg'
         >
           Install From VSCode Marketplace
         </a>
 
-        <div className='flex justify-center items-center mt-6'>
+        <div className='flex justify-center items-center mt-4'>
           <GithubButton repo='tinkerun-vscode'/>
 
           <Link href='/'>
