@@ -8,21 +8,21 @@ export default function VSCodePage() {
     <BaseLayout
       title='Tinkerun for Visual Studio Code'
     >
-      <section className='pt-20 text-center'>
+      <section className='pt-10 lg:pt-20 text-center px-4'>
 
         <div className='flex justify-center items-center mb-8'>
-          <div className='w-16 h-16'>
+          <div className='w-12 h-12 lg:w-16 lg:h-16'>
             <img
               alt='logo'
               src='/logo.png?nf_resize=fit&w=256'
             />
           </div>
-          <h1 className='ml-4 text-5xl font-black italic'>
+          <h1 className='ml-4 text-4xl lg:text-5xl font-black italic'>
             Tinkerun
           </h1>
         </div>
 
-        <h1 className='text-5xl font-black'>
+        <h1 className='text-3xl lg:text-5xl font-black'>
           for Visual Studio Code
         </h1>
         <p className='font-light text-sm mt-4'>
