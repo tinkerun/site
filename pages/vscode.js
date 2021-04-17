@@ -8,7 +8,7 @@ export default function VSCodePage() {
     <BaseLayout
       title='Tinkerun for Visual Studio Code'
     >
-      <section className='mt-20 text-center'>
+      <section className='pt-20 text-center'>
 
         <div className='flex justify-center items-center mb-4'>
           <div className='w-16 h-16'>
