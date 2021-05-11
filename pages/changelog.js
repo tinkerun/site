@@ -18,7 +18,7 @@ export default function ChangelogPage() {
         <div className='mt-12 border-t py-12'>
 
           <ChangelogItem
-            date={format(new Date(2021, 4, 30), 'LLL, dd yyyy')}
+            date={format(new Date(2021, 3, 30), 'LLL, dd yyyy')}
             version='v0.1.5'
           >
             <p className='text-sm leading-loose'>
@@ -27,7 +27,7 @@ export default function ChangelogPage() {
           </ChangelogItem>
 
           <ChangelogItem
-            date={format(new Date(2021, 4, 7), 'LLL, dd yyyy')}
+            date={format(new Date(2021, 3, 7), 'LLL, dd yyyy')}
             version='v0.1.4'
           >
             <p className='text-sm leading-loose'>
