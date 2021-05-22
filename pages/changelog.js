@@ -18,6 +18,26 @@ export default function ChangelogPage() {
         <div className='mt-12 border-t py-12'>
 
           <ChangelogItem
+            date={format(new Date(2021, 4, 22), 'LLL, dd yyyy')}
+            version='v0.2.0'
+          >
+            <ul className='list-disc text-sm pl-4'>
+              <li>Support snippet form</li>
+              <li>Support protocol to open connection direct</li>
+              <li>Optimize for mac</li>
+            </ul>
+          </ChangelogItem>
+
+          <ChangelogItem
+            date={format(new Date(2021, 4, 18), 'LLL, dd yyyy')}
+            version='v0.1.5'
+          >
+            <p className='text-sm leading-loose'>
+              Support setting shortcuts
+            </p>
+          </ChangelogItem>
+
+          <ChangelogItem
             date={format(new Date(2021, 3, 30), 'LLL, dd yyyy')}
             version='v0.1.5'
           >
