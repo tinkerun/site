@@ -16,6 +16,14 @@ export default function ChangelogPage() {
         <p className='text-sm mt-2'>Latest changes and updates to Tinkerun</p>
 
         <div className='mt-12 border-t py-12'>
+          <ChangelogItem
+            date={format(new Date(2021, 4, 22), 'LLL, dd yyyy')}
+            version='v0.2.1'
+          >
+            <p className='text-sm leading-loose'>
+              Support setting theme
+            </p>
+          </ChangelogItem>
 
           <ChangelogItem
             date={format(new Date(2021, 4, 22), 'LLL, dd yyyy')}
