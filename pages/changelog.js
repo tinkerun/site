@@ -17,6 +17,22 @@ export default function ChangelogPage() {
 
         <div className='mt-12 border-t py-12'>
           <ChangelogItem
+            date={format(new Date(2021, 4, 25), 'LLL, dd yyyy')}
+            version='v0.2.3'
+          >
+            <p className='text-sm leading-loose'>
+              Add reconnect button
+            </p>
+          </ChangelogItem>
+          <ChangelogItem
+            date={format(new Date(2021, 4, 24), 'LLL, dd yyyy')}
+            version='v0.2.2'
+          >
+            <p className='text-sm leading-loose'>
+              Fix issue <a className='text-blue-500 hover:underline' href='//github.com/tinkerun/tinkerun/issues/12'>#12</a>
+            </p>
+          </ChangelogItem>
+          <ChangelogItem
             date={format(new Date(2021, 4, 22), 'LLL, dd yyyy')}
             version='v0.2.1'
           >
