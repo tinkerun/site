@@ -17,6 +17,16 @@ export default function ChangelogPage() {
 
         <div className='mt-12 border-t py-12'>
           <ChangelogItem
+            date={format(new Date(2021, 8, 25), 'LLL, dd yyyy')}
+            version='v0.2.7'
+          >
+            <ul className='list-disc text-sm pl-4'>
+              <li>Support dynamic snippet form</li>
+              <li>Add snippet form switch in preference</li>
+              <li>Support clone connections</li>
+            </ul>
+          </ChangelogItem>
+          <ChangelogItem
             date={format(new Date(2021, 4, 25), 'LLL, dd yyyy')}
             version='v0.2.3'
           >
